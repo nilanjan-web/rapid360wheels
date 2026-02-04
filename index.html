@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RAPID360WHEELS | Ambulance Service</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="RAPID360WHEELS - 24x7 Emergency Ambulance Service in Kolkata. ICU, Cardiac, Intercity Ambulance. Call / WhatsApp to book now.">
+<meta name="keywords" content="Emergency Ambulance Kolkata, Best Ambulance Service in Kolkata, ICU Ambulance Service, Cardiac Ambulance Service, RAPIDO360WHEELS">
+
+<!-- Favicon -->
+<link rel="icon" href="logo.jpeg">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+  <div class="logo">
+    <img src="logo.jpeg"> RAPID360WHEELS
+  </div>
+  <div class="top-actions">
+    <button class="lang-btn" onclick="toggleLanguage()">বাংলা / English</button>
+    <a class="call-btn" href="tel:+917001577240">📞 CALL NOW</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>24×7 Emergency Ambulance Service</h1>
+  <p>Fast • Reliable • ICU & Cardiac Ambulance Available</p>
+
+  <div class="hero-buttons">
+    <a class="whatsapp-btn" href="https://wa.me/917001577240?text=Hello,%20I%20need%20an%20ambulance%20service%20urgently.%20Please%20contact%20me%20as%20soon%20as%20possible.%20It's%20an%20emergency." target="_blank">💬 WhatsApp</a>
+    <a class="emergency-btn" href="tel:+917001577240">🚨 Emergency Call</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Ambulance Services</h2>
+  <div class="service-grid">
+    <div class="service-card">🚑 Emergency Ambulance</div>
+    <div class="service-card">❤️ ICU Ambulance</div>
+    <div class="service-card">💓 Cardiac Ambulance</div>
+    <div class="service-card">⚰️ Dead Body Ambulance</div>
+    <div class="service-card">🛣️ Intercity Ambulance</div>
+    <div class="service-card">🏥 Hospital Transfer</div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking">
+  <h2>Book Ambulance Now</h2>
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Patient Name" required>
+    <input type="tel" id="phone" placeholder="Mobile Number" required>
+    <input type="text" id="location" placeholder="Pickup Location" required>
+     <button type="button" class="location-btn" onclick="getLocation()">📍 Use My Live Location</button>
+    <input type="text" id="drop" placeholder="Drop Location" required>
+    <button type="button" class="location-btn" onclick="getLocation()">📍 Use Drop Location</button>
+    <select id="service">
+      <option>Emergency Ambulance</option>
+      <option>ICU Ambulance</option>
+      <option>Cardiac Ambulance</option>
+      <option>Dead Body Ambulance</option>
+      <option>Hospital Transfer</option>
+      <option>Intercity Ambulance</option>
+    </select>
+    <button type="submit">🚑 Book on WhatsApp</button>
+  </form>
+</section>
+
+<!-- UPI PAYMENT -->
+<section class="payment-box">
+  <h2>Pay Advance (UPI)</h2>
+  <p>Scan & Pay</p>
+  <img src="upi-qr.jpeg" width="200" alt="UPI QR Code">
+  <p class="upi-id">ghoshd1581@ybl</p>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+  <h2>Our Location</h2>
+  <iframe src="https://maps.google.com/maps?q=kolkata&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0;"></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>📞 +91 70015 77240 | WhatsApp Available</p>
+  <p>© 2026 RAPID360WHEELS</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
