@@ -110,12 +110,30 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; }
         padding: 60px 10px; /* ফোনের ওপরের গ্যাপ কমাবে */
     }
     
-    .top-bar {
-        padding: 5px 10px; /* হেডার বারকে ছোট করবে */
-    }
-
-    .logo img {
-        height: 35px; /* ফোনের স্ক্রিনে লোগো ছোট করবে */
-    }
+   /* ১১২ নম্বর লাইনের .top-bar সেকশনে এটি বসান */
+.top-bar {
+    display: flex;
+    flex-direction: column; /* লোগো ও বাটনকে উপরে-নিচে নিয়ে আসবে */
+    padding: 10px 5px;
+    gap: 10px;
+    height: auto;
+    align-items: center;
 }
+
+/* বাটনগুলোর জন্য নতুন সেকশন যোগ করুন */
+.top-actions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 8px; /* বাটন দুটির মাঝে গ্যাপ বাড়াবে */
+}
+
+.lang-toggle, .call-btn {
+    flex: 1; /* দুটি বাটনকে সমান চওড়া করবে */
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 13px; /* লেখা যাতে এক লাইনে থাকে */
+    white-space: nowrap;
+}
+
 
