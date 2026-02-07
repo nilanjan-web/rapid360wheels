@@ -81,7 +81,12 @@ body {
     margin: 0 auto;
 }
 .service-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-.service-card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 4px solid var(--red); }
+.service-card img {
+    width: 100%;
+    height: auto; /* এখানে ১০০ পিক্সেল এর বদলে auto দিন */
+    object-fit: cover;
+    border-bottom: 4px solid var(--red);
+}
 .service-card p { padding: 15px; font-weight: bold; font-size: 16px; margin: 0; color: var(--red); }
 
 /* Booking Form */
@@ -97,4 +102,20 @@ body {
 .upi-id span { background: #eee; padding: 5px 10px; border-radius: 4px; font-family: monospace; font-weight: bold; }
 footer { background: #222; color: #ccc; text-align: center; padding: 30px; }
 
-@media (max-width: 600px) { .hero-buttons { flex-direction: column; } }
+/* ১০০ নম্বর লাইনের ভেতরে এটি যোগ করুন */
+@media (max-width: 600px) {
+    .hero-buttons { flex-direction: column; } /* আপনার আগে থেকেই আছে */
+    
+    .hero {
+        padding: 60px 10px; /* ফোনের ওপরের গ্যাপ কমাবে */
+    }
+    
+    .top-bar {
+        padding: 5px 10px; /* হেডার বারকে ছোট করবে */
+    }
+
+    .logo img {
+        height: 35px; /* ফোনের স্ক্রিনে লোগো ছোট করবে */
+    }
+}
+
