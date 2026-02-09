@@ -37,6 +37,34 @@
     </div>
 </section>
 
+    <section class="counters" style="display: flex; justify-content: space-around; padding: 40px 20px; background: #8b0000; color: white; text-align: center; border-radius: 15px; margin: 20px;">
+    <div><i class="fas fa-users"></i><h3 style="font-size: 28px; margin: 0;">5000+</h3><p style="margin: 5px 0 0;">Happy Clients</p></div>
+    <div> <i class="fas fa-bolt"></i><h3 style="font-size: 28px; margin: 0;">15 Min</h3><p style="margin: 5px 0 0;">Response Time</p></div>
+    <div><i class="fas fa-headset"></i><h3 style="font-size: 28px; margin: 0;">24/7</h3><p style="margin: 5px 0 0;">Service Available</p></div>
+</section>
+
+<section class="booking">
+    <h2 id="booking-title">Book Ambulance Now</h2>
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Patient Name" required>
+        <input type="tel" id="phone" placeholder="Mobile Number" required>
+        <input type="text" id="location" placeholder="Pickup Location" required>
+        <button type="button" class="location-btn" onclick="getLocation()">📍 Use My Live Location</button>
+        <input type="text" id="drop" placeholder="Drop Location" required>
+        <button type="button" class="drop-btn" onclick="getLocation()">📍 Use My Live Location</button>
+        <select id="service">
+            <option>Emergency Ambulance</option>
+            <option>ICU Ambulance</option>
+            <option>Cardiac Ambulance</option>
+            <option>Dead Body Ambulance</option>
+            <option>Hospital Transfer</option>
+            <option>Intercity Ambulance</option>
+            <option>Air Ambulance</option>
+        </select>
+        <button type="submit" class="submit-btn">🚑 Book on WhatsApp</button>
+    </form>
+</section>
+
 <section class="services">
     <h2 id="service-title">Our Ambulance Services</h2>
     <div class="service-grid">
@@ -71,33 +99,6 @@
     </div>
 </section>
 
-<section class="counters" style="display: flex; justify-content: space-around; padding: 40px 20px; background: #8b0000; color: white; text-align: center; border-radius: 15px; margin: 20px;">
-    <div><i class="fas fa-users"></i><h3 style="font-size: 28px; margin: 0;">5000+</h3><p style="margin: 5px 0 0;">Happy Clients</p></div>
-    <div> <i class="fas fa-bolt"></i><h3 style="font-size: 28px; margin: 0;">15 Min</h3><p style="margin: 5px 0 0;">Response Time</p></div>
-    <div><i class="fas fa-headset"></i><h3 style="font-size: 28px; margin: 0;">24/7</h3><p style="margin: 5px 0 0;">Service Available</p></div>
-</section>
-
-<section class="booking">
-    <h2 id="booking-title">Book Ambulance Now</h2>
-    <form id="bookingForm">
-        <input type="text" id="name" placeholder="Patient Name" required>
-        <input type="tel" id="phone" placeholder="Mobile Number" required>
-        <input type="text" id="location" placeholder="Pickup Location" required>
-        <button type="button" class="location-btn" onclick="getLocation()">📍 Use My Live Location</button>
-        <input type="text" id="drop" placeholder="Drop Location" required>
-        <button type="button" class="drop-btn" id="drop-btn">📍 Set My Drop Location</button>
-        <select id="service">
-            <option>Emergency Ambulance</option>
-            <option>ICU Ambulance</option>
-            <option>Cardiac Ambulance</option>
-            <option>Dead Body Ambulance</option>
-            <option>Hospital Transfer</option>
-            <option>Intercity Ambulance</option>
-            <option>Air Ambulance</option>
-        </select>
-        <button type="submit" class="submit-btn">🚑 Book on WhatsApp</button>
-    </form>
-</section>
 <section class="about-us" style="padding: 80px 20px; text-align: center; background: #fff; border-top: 1px solid #eee;">
     <div style="max-width: 1100px; margin: 0 auto;">
         <div id="about-en">
@@ -186,4 +187,5 @@
 </body>
 
 </html>
+
 
